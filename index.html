@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Smart Fit Udumalpet | Mall Labels. Factory Prices. (60%–75% OFF)</title>
+  <meta name="description" content="100% Authentic Branded Factory Surplus Clothing in Udumalpet, Tamil Nadu. Avaasa Kurtis, Louis Philippe, US Polo & RL Tees at 60%-75% OFF MRP. South India doorstep courier.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/smartfit-logo.svg">
+
+  <!-- Google Fonts: Playfair Display + Syne + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="editorial-body">
+
+  <!-- Sticky Glassmorphic Header -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+      </button>
+
+      <!-- Brand Logo & Wordmark -->
+      <a href="#" class="brand-wordmark" aria-label="Smart Fit Homepage">
+        <svg class="brand-logo-mark" viewBox="0 0 100 108" fill="none" aria-hidden="true">
+          <path class="logo-hanger-stroke" d="M50 20 C50 15.5 55.5 13 55.5 8.5 C55.5 5.2 53 3 50 3 C47.3 3 45.2 4.8 44.8 7.4" stroke-width="4" stroke-linecap="round" fill="none"/>
+          <path class="logo-hanger-fill" d="M50 18 L15 32.5 C13.5 33.1 13.8 34.5 15.5 34.3 C30 32.2 42 31.2 50 31.2 C58 31.2 70 32.2 84.5 34.3 C86.2 34.5 86.5 33.1 85 32.5 Z"/>
+          <path fill="#E3591D" fill-rule="evenodd" clip-rule="evenodd" d="M13 38 H87 V74 L50 104 L13 74 Z M20 44 V70.5 L46.5 92 V44 Z M53.5 44 V92 L80 70.5 V44 Z"/>
+          <path fill="#E3591D" d="M24 47 H42 V52.5 H30 V57 H42 V84 L24 70.5 V65.5 L36 74.5 V62 H24 Z"/>
+          <path fill="#E3591D" d="M58 47 H77 V52.5 H64 V58 H74.5 V63.5 H64 V79 L58 84 Z"/>
+        </svg>
+        <div class="brand-lockup">
+          <span class="brand-text">SMART FIT</span>
+          <span class="brand-subtext">IMPRESS OTHERS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu matching reference -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#departments" class="nav-link">Collections</a>
+        <a href="#drops" class="nav-link">New Drops</a>
+        <a href="#combo" class="nav-link">Offers</a>
+        <a href="#why-us" class="nav-link">About Us</a>
+        <a href="#store-locator" class="nav-link">Visit Store</a>
+      </nav>
+
+      <!-- Header Action CTA -->
+      <div class="nav-actions">
+        <!-- WhatsApp Direct CTA - Chat & Order -->
+        <a href="https://wa.me/919360660051?text=Hi%20Smart%20Fit%20Udumalpet,%20I'm%20visiting%20your%20website%20and%20want%20to%20see%20today's%20fresh%20surplus%20arrivals!" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn btn-whatsapp-header"
+           id="header-wa-cta"
+           title="Chat & Order on WhatsApp">
+          <svg class="btn-icon wa-logo-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.98 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.48 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" fill="currentColor"/>
+          </svg>
+          <span>Chat &amp; Order</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-panel" id="mobile-nav">
+    <div class="mobile-nav-header">
+      <a href="#" class="brand-wordmark" aria-label="Smart Fit Homepage">
+        <svg class="brand-logo-mark" viewBox="0 0 100 108" fill="none" aria-hidden="true">
+          <path class="logo-hanger-stroke" d="M50 20 C50 15.5 55.5 13 55.5 8.5 C55.5 5.2 53 3 50 3 C47.3 3 45.2 4.8 44.8 7.4" stroke-width="4" stroke-linecap="round" fill="none"/>
+          <path class="logo-hanger-fill" d="M50 18 L15 32.5 C13.5 33.1 13.8 34.5 15.5 34.3 C30 32.2 42 31.2 50 31.2 C58 31.2 70 32.2 84.5 34.3 C86.2 34.5 86.5 33.1 85 32.5 Z"/>
+          <path fill="#E3591D" fill-rule="evenodd" clip-rule="evenodd" d="M13 38 H87 V74 L50 104 L13 74 Z M20 44 V70.5 L46.5 92 V44 Z M53.5 44 V92 L80 70.5 V44 Z"/>
+          <path fill="#E3591D" d="M24 47 H42 V52.5 H30 V57 H42 V84 L24 70.5 V65.5 L36 74.5 V62 H24 Z"/>
+          <path fill="#E3591D" d="M58 47 H77 V52.5 H64 V58 H74.5 V63.5 H64 V79 L58 84 Z"/>
+        </svg>
+        <div class="brand-lockup">
+          <span class="brand-text">SMART FIT</span>
+          <span class="brand-subtext">IMPRESS OTHERS</span>
+        </div>
+      </a>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links">
+      <a href="#hero" class="mobile-link active"><span>01</span> Home</a>
+      <a href="#departments" class="mobile-link"><span>02</span> Collections</a>
+      <a href="#drops" class="mobile-link"><span>03</span> New Drops</a>
+      <a href="#combo" class="mobile-link"><span>04</span> Offers (SMART3X)</a>
+      <a href="#why-us" class="mobile-link"><span>05</span> About Us</a>
+      <a href="#store-locator" class="mobile-link"><span>06</span> Visit Store</a>
+    </nav>
+
+    <div class="mobile-nav-footer">
+      <p class="mobile-address-preview">📍 No. 68, Kaliyaniammal Layout, Gandhi Nagar, Udumalpet</p>
+      <a href="https://wa.me/919360660051?text=Hi%20Smart%20Fit%20Udumalpet,%20I'm%20looking%20for%20fresh%20surplus%20stock!" 
+         class="btn btn-emerald btn-block" 
+         target="_blank" 
+         rel="noopener noreferrer">
+                    <svg class="wa-logo-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.98 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.48 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" fill="currentColor"/></svg> Chat With Store Associate
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- GRAND CINEMATIC EDITORIAL HERO CAROUSEL -->
+    <section class="cinematic-hero-section" id="hero" aria-label="Editorial Lookbook Showcase">
+      <div class="hero-slider-wrap" id="hero-slider">
+        <!-- Slide Track -->
+        <div class="hero-slides-track" id="hero-track">
+          <!-- Slide 1: Avaasa Kurtis -->
+          <div class="hero-slide active" data-slide="0">
+            <div class="slide-bg-container">
+              <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1920&q=85" 
+                   alt="Avaasa 2-Pc and 3-Pc Designer Kurti Sets" 
+                   class="slide-bg-img" 
+                   loading="eager">
+              <div class="slide-gradient-overlay"></div>
+            </div>
+
+            <div class="slide-content-container">
+              <div class="slide-badge-pill">
+                <span class="sparkle-dot"></span>
+                <span>CARTON SURPLUS LOT #28 • FLAT 70% OFF</span>
+              </div>
+
+              <!-- Refined Italic Display Script matching Kalyan Silks "Unwrap the Joy" -->
+              <h1 class="hero-script-headline">Unbox the Surplus</h1>
+
+              <!-- Subtitle flanked by lines matching "— WEAR THE ELEGANCE —" -->
+              <p class="hero-editorial-sub">— AVAASA 2-PC &amp; 3-PC FESTIVE ENSEMBLES —</p>
+
+              <div class="hero-pricing-pill">
+                <span class="price-val">Surplus Special ₹799</span>
+                <del class="price-mrp">MRP ₹2,999</del>
+                <span class="price-save">Save ₹2,200</span>
+              </div>
+
+              <div class="hero-slide-ctas">
+                <a href="https://wa.me/919360660051?text=Hi%20Smart%20Fit%20Udumalpet!%20I%20saw%20the%20Avaasa%20Festive%20Kurti%20ensembles%20on%20your%20hero%20lookbook.%20Please%20share%20available%20sizes%20and%20designs!" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn btn-hero-wa">
+                              <svg class="wa-logo-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.98 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.48 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" fill="currentColor"/></svg>
+                  <span>Shop Avaasa on WhatsApp</span>
+                </a>
+
+                <a href="#departments" class="btn btn-hero-browse">
+                  <span>Explore Collections</span>
+                  <i data-lucide="arrow-down-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: Louis Philippe & US Polo Shirts -->
+          <div class="hero-slide" data-slide="1">
+            <div class="slide-bg-container">
+              <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=1920&q=85" 
+                   alt="Louis Philippe and US Polo Men's Formal &amp; Casual Shirts" 
+                   class="slide-bg-img" 
+                   loading="lazy">
+              <div class="slide-gradient-overlay"></div>
+            </div>
+
+            <div class="slide-content-container">
+              <div class="slide-badge-pill">
+                <span class="sparkle-dot"></span>
+                <span>EXPORT FACTORY EXCESS • 75% OFF MRP</span>
+              </div>
+
+              <h2 class="hero-script-headline">Mall Labels. Factory Prices.</h2>
+              <p class="hero-editorial-sub">— LOUIS PHILIPPE &amp; US POLO ASSN. SHIRTS —</p>
+
+              <div class="hero-pricing-pill">
+                <span class="price-val">Pure Giza Twill From ₹649</span>
+                <del class="price-mrp">MRP ₹2,799</del>
+                <span class="price-save">Save ₹2,150</span>
+              </div>
+
+              <div class="hero-slide-ctas">
+                <a href="https://wa.me/919360660051?text=Hi%20Smart%20Fit%20Udumalpet!%20I%20want%20to%20order%20Louis%20Philippe%20and%20US%20Polo%20shirts%20from%20your%20surplus%20collection.%20What%20sizes%20are%20in%20stock%20today?" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn btn-hero-wa">
+                              <svg class="wa-logo-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.98 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.48 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" fill="currentColor"/></svg>
+                  <span>Order Shirts on WhatsApp</span>
+                </a>
+
+                <a href="#departments" class="btn btn-hero-browse">
+                  <span>Explore Collections</span>
+                  <i data-lucide="arrow-down-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: Ralph Lauren Polos & Streetwear Tees -->
+          <div class="hero-slide" data-slide="2">
+            <div class="slide-bg-container">
+              <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=1920&q=85" 
+                   alt="Ralph Lauren Polos and Heavyweight Street Graphic Tees" 
+                   class="slide-bg-img" 
+                   loading="lazy">
+              <div class="slide-gradient-overlay"></div>
+            </div>
+
+            <div class="slide-content-container">
+              <div class="slide-badge-pill">
+                <span class="sparkle-dot"></span>
+                <span>YOUTH STREET &amp; PIQUE DROPS • UNDER ₹499</span>
+              </div>
+
+              <h2 class="hero-script-headline">Wear the Culture</h2>
+              <p class="hero-editorial-sub">— RALPH LAUREN POLOS &amp; HEAVYWEIGHT TEES —</p>
+
+              <div class="hero-pricing-pill">
+                <span class="price-val">260 GSM Bio-Washed Pique ₹449</span>
+                <del class="price-mrp">MRP ₹1,799</del>
+                <span class="price-save">Save ₹1,350</span>
+              </div>
+
+              <div class="hero-slide-ctas">
+                <a href="https://wa.me/919360660051?text=Hi%20Smart%20Fit%20Udumalpet!%20I'm%20interested%20in%20the%20Ralph%20Lauren%20Polos%20and%20oversized%20graphic%20t-shirts%20from%20your%20homepage%20drop!" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn btn-hero-wa">
+                              <svg class="wa-logo-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.98 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.48 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" fill="currentColor"/></svg>
+                  <span>Shop Polos &amp; Tees on WhatsApp</span>
+                </a>
+
+                <a href="#departments" class="btn btn-hero-browse">
+                  <span>Explore Collections</span>
+                  <i data-lucide="arrow-down-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Side Navigation Buttons -->
+        <button class="hero-nav-btn prev" id="hero-prev" aria-label="Previous Slide">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        <button class="hero-nav-btn next" id="hero-next" aria-label="Next Slide">
+          <i data-lucide="chevron-right"></i>
+        </button>
+
+        <!-- Slide Indicators / Dots -->
+        <div class="hero-indicators" id="hero-dots">
+          <button class="hero-dot active" data-index="0" aria-label="Go to slide 1"></button>
+          <button class="hero-dot" data-index="1" aria-label="Go to slide 2"></button>
+          <button class="hero-dot" data-index="2" aria-label="Go to slide 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile-Only Category Story Strip (<768px) -->
+    <section class="mobile-story-strip" aria-label="Quick Category Stories">
+      <div class="story-scroll" id="story-container">
+        <!-- Injected via JavaScript from SMART_FIT_DATA.stories -->
+      </div>
+    </section>
+
+    <!-- Infinite Kinetic Brand Marquee (Text-Only Editorial Ticker) -->
+    <section class="kinetic-marquee" aria-label="Featured Surplus Labels">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span class="brand-mono">LOUIS PHILIPPE</span>
+          <span class="marquee-dot">◆</span>
+          <span class="brand-mono">AVAASA 3-PC SETS</span>
+          <span class="marquee-dot">◆</span>
+          <span class="brand-mono">US POLO ASSN.</span>
+          <span class="marquee-dot">◆</span>
+          <span class="brand-mono">RALPH LAUREN POLO</span>
+          <span class="marquee-dot">◆</span>
+          <span class="brand-mono">EXPRESS SOUTH INDIA COURIER</span>
+          <span class="marquee-dot">◆</span>
+          <span class="brand-mono">60%–75% BELOW MALL MRP</span>
+          <span class="marquee-dot">◆</span>
+          <span class="brand-mono">GANDHI NAGAR UDUMALPET</span>
+          <span class="marquee-dot">◆</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span class="brand-mono">LOUIS PHILIPPE</span>
+          <span class="marquee-dot">◆</span>
+          <span class="brand-mono">AVAASA 3-PC SETS</span>
+          <span class="marquee-dot">◆</span>
+          <span class="brand-mono">US POLO ASSN.</span>
+          <span class="marquee-dot">◆</span>
+          <span class="brand-mono">RALPH LAUREN POLO</span>
+          <span class="marquee-dot">◆</span>
+          <span class="brand-mono">EXPRESS SOUTH INDIA COURIER</span>
+          <span class="marquee-dot">◆</span>
+          <span class="brand-mono">60%–75% BELOW MALL MRP</span>
+          <span class="marquee-dot">◆</span>
+          <span class="brand-mono">GANDHI NAGAR UDUMALPET</span>
+          <span class="marquee-dot">◆</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curated Lookbook Triptych (3-Panel Visual Preview) -->
+    <section class="triptych-preview-section">
+      <div class="triptych-container">
+        <div class="triptych-row">
+          <!-- Left: LP & US Polo Shirts -->
+          <div class="triptych-card" data-filter="shirts">
+            <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80" alt="Branded Shirts" class="triptych-card-img" loading="lazy">
+            <div class="triptych-card-overlay">
+              <span class="triptych-tag">MEN'S SHIRTS</span>
+              <h3 class="triptych-card-title">Louis Philippe &amp; USPA</h3>
+              <p class="triptych-price">From ₹649 <del>₹2,799</del></p>
+            </div>
+          </div>
+
+          <!-- Center: Avaasa Festive Kurtis -->
+          <div class="triptych-card arch-card" data-filter="kurtis">
+            <span class="arch-badge">FLAT 70% OFF</span>
+            <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80" alt="Avaasa Kurtis" class="triptych-card-img" loading="lazy">
+            <div class="triptych-card-overlay">
+              <span class="triptych-tag">SPOTLIGHT DROP</span>
+              <h3 class="triptych-card-title">Avaasa 2-Pc &amp; 3-Pc Sets</h3>
+              <p class="triptych-price">Surplus Special ₹799 <del>₹2,999</del></p>
+            </div>
+          </div>
+
+          <!-- Right: RL & Street Tees -->
+          <div class="triptych-card" data-filter="tees">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80" alt="Street Tees &amp; Polos" class="triptych-card-img" loading="lazy">
+            <div class="triptych-card-overlay">
+              <span class="triptych-tag">POLOS &amp; TEES</span>
+              <h3 class="triptych-card-title">RL Polo &amp; Heavy Tees</h3>
+              <p class="triptych-price">Starting ₹399 <del>₹1,799</del></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop by Department (Asymmetrical Bento Grid) -->
+    <section class="section-container bg-surface" id="departments">
+      <div class="section-header">
+        <div class="header-intro">
+          <span class="section-kicker">CURATED SURPLUS DEPARTMENTS</span>
+          <h2 class="section-title">Shop by Department</h2>
+          <p class="section-desc">Full brand scope tailored for college wear, corporate styling, workout gear, and daily playwear.</p>
+        </div>
+        <span class="header-tag">UDUMALPET RACK READY</span>
+      </div>
+
+      <div class="bento-grid" id="departments-bento">
+        <!-- Rendered via JavaScript from SMART_FIT_DATA.departments -->
+      </div>
+    </section>
+
+    <!-- Fresh Weekly Drops (Horizontal Snap Carousel) -->
+    <section class="section-container" id="drops">
+      <div class="section-header flex-header">
+        <div class="header-intro">
+          <span class="section-kicker">LIMITED FACTORY OVERRUNS</span>
+          <h2 class="section-title">Fresh Weekly Drops</h2>
+          <p class="section-desc">Limited carton drops unboxed this week. Rare cuts with only 2–8 pieces per lot.</p>
+        </div>
+
+        <!-- Carousel Nav Buttons -->
+        <div class="carousel-controls">
+          <button class="btn-carousel-ctrl prev" id="drop-prev" aria-label="Previous Drop">
+            <i data-lucide="chevron-left"></i>
+          </button>
+          <button class="btn-carousel-ctrl next" id="drop-next" aria-label="Next Drop">
+            <i data-lucide="chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Snap Track -->
+      <div class="carousel-container">
+        <div class="carousel-track" id="drops-track">
+          <!-- Rendered via JavaScript from SMART_FIT_DATA.weeklyDrops -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Combo Offer Banner -->
+    <section class="section-container" id="combo">
+      <div class="editorial-banner">
+        <div class="banner-pattern" aria-hidden="true"></div>
+        <div class="banner-grid">
+          <div class="banner-info">
+            <div class="banner-pill">
+              <span class="sparkle">✦</span>
+              <span>SPECIAL VALUE EDITORIAL PROMO</span>
+            </div>
+
+            <h2 class="banner-title">
+              THE SMART 3X <span class="highlight-emerald">SURPLUS COMBO</span>
+            </h2>
+
+            <p class="banner-lead">
+              Mix and match any <strong>3 Branded Shirts or Avaasa Kurti Sets</strong> for just <strong>₹1,799</strong>. (Original combined mall value up to ₹8,500).
+            </p>
+
+            <ul class="banner-features">
+              <li><i data-lucide="check" class="check-ico"></i> Choose from Louis Philippe, US Polo &amp; Avaasa</li>
+              <li><i data-lucide="check" class="check-ico"></i> Free Express Courier across Tamil Nadu &amp; Kerala</li>
+              <li><i data-lucide="check" class="check-ico"></i> Live tag verification video call included</li>
+            </ul>
+
+            <div class="banner-voucher">
+              <span class="voucher-label">APPLY VOUCHER CODE</span>
+              <span class="voucher-code">SMART3X</span>
+              <button class="btn-copy-code" id="copy-code-btn" title="Copy code to clipboard">
+                <i data-lucide="copy"></i> Copy
+              </button>
+            </div>
+
+            <div class="banner-action-row">
+              <a href="https://wa.me/919360660051?text=Hi%20Smart%20Fit,%20I%20want%20to%20claim%20THE%20SMART%203X%20SURPLUS%20COMBO%20(3%20Shirts/Kurtis%20@%20Rs.1799)%20with%20code%20SMART3X!%20Please%20guide%20me." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn btn-combo-wa">
+                            <svg class="wa-logo-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.98 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.48 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" fill="currentColor"/></svg>
+                <span>Claim SMART3X on WhatsApp</span>
+              </a>
+              <span class="banner-disclaimer">*Limited to current rack inventory in Udumalpet</span>
+            </div>
+          </div>
+
+          <div class="banner-visual">
+            <div class="combo-visual-card">
+              <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=800&q=80" 
+                   alt="Smart Fit 3X Surplus Combo Shirts and Kurtis Pack" 
+                   loading="lazy" 
+                   class="combo-card-img">
+              <div class="combo-badge-overlay">
+                <span class="combo-save-tag">SAVE ₹6,700</span>
+                <span class="combo-price-tag">3 FOR ₹1,799</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Smart Fit + @smartfitudumalpet Live Drop Feed -->
+    <section class="section-container" id="why-us">
+      <div class="section-header">
+        <div class="header-intro">
+          <span class="section-kicker">TRANSPARENT VALUE EQUATION</span>
+          <h2 class="section-title">Why Smart Fit Surplus?</h2>
+          <p class="section-desc">How we bring authentic high-street brands at a fraction of showroom price tag.</p>
+        </div>
+      </div>
+
+      <!-- Feature Grid -->
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <h3 class="feature-title">100% Authentic Factory Surplus</h3>
+          <p class="feature-desc">Direct factory overruns, canceled export shipments, and brand-authorized surplus lots. Wash care tags, spare buttons, and security labels intact.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i data-lucide="badge-percent"></i>
+          </div>
+          <h3 class="feature-title">60%–75% Strikethrough Savings</h3>
+          <p class="feature-desc">Eliminating opulent showroom rents, intermediary distributors, and fancy branding overheads. We pass 100% of factory savings straight to you.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i data-lucide="truck"></i>
+          </div>
+          <h3 class="feature-title">Fast Courier Across South India</h3>
+          <p class="feature-desc">Prompt daily dispatches via leading express courier services. Doorstep delivery across Tamil Nadu, Kerala, Karnataka, Andhra Pradesh &amp; Telangana.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i data-lucide="video"></i>
+          </div>
+          <h3 class="feature-title">Live Video Tag Verification</h3>
+          <p class="feature-desc">Want to inspect stitch quality, brand tags, or color vibrancy before paying? Request a 1-on-1 video walkthrough with our Udumalpet store crew on WhatsApp.</p>
+        </div>
+      </div>
+
+      <!-- @smartfitudumalpet Live Unboxing Feed -->
+      <div class="instagram-feed-wrap">
+        <div class="feed-header">
+          <div class="feed-branding">
+            <svg class="insta-icon" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+            </svg>
+            <div>
+              <h3 class="feed-handle">@smartfitudumalpet</h3>
+              <p class="feed-sub">Follow our weekly carton unboxings, live rack drops &amp; customer courier dispatches</p>
+            </div>
+          </div>
+          <a href="https://instagram.com/smartfitudumalpet" target="_blank" rel="noopener noreferrer" class="btn btn-outline-sm">
+            <span>Follow on Instagram</span>
+            <i data-lucide="external-link"></i>
+          </a>
+        </div>
+
+        <div class="reels-grid" id="reels-grid">
+          <!-- Rendered via JavaScript from SMART_FIT_DATA.socialReels -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Store Location & Embedded Google Map -->
+    <section class="section-container" id="store-locator">
+      <div class="section-header">
+        <div class="header-intro">
+          <span class="section-kicker">PHYSICAL STORE EXPERIENCE</span>
+          <h2 class="section-title">Visit Us in Udumalpet</h2>
+          <p class="section-desc">Experience the fabrics in person, try on different fits, or order online with guaranteed doorstep courier.</p>
+        </div>
+      </div>
+
+      <div class="store-layout-grid">
+        <!-- Store Information Card -->
+        <div class="store-info-card">
+          <div class="store-badge">WALK-IN STORE OPEN DAILY</div>
+
+          <h3 class="store-name">Smart Fit Boutique</h3>
+          <p class="store-address">
+            <i data-lucide="map-pin" class="addr-ico"></i>
+            <span>No. 68, Kaliyaniammal Layout, Gandhi Nagar,<br>Udumalpet – 642126, Tamil Nadu.</span>
+          </p>
+
+          <div class="store-meta-list">
+            <div class="meta-item">
+              <i data-lucide="clock" class="meta-ico"></i>
+              <div>
+                <strong>Operating Hours</strong>
+                <p>Monday – Sunday: 10:00 AM – 9:30 PM</p>
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <i data-lucide="truck" class="meta-ico"></i>
+              <div>
+                <strong>Doorstep Delivery Zones</strong>
+                <p>Tamil Nadu, Kerala, Karnataka, Andhra Pradesh &amp; Telangana (24–48 Hr Dispatch)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Contact Actions -->
+          <div class="store-actions">
+            <a href="tel:+919360660051" class="btn btn-store-action">
+              <i data-lucide="phone"></i>
+              <span>Call +91 9360660051</span>
+            </a>
+
+            <a href="https://wa.me/919360660051?text=Hi%20Smart%20Fit,%20I'm%20planning%20to%20visit%20your%20Gandhi%20Nagar%20store%20in%20Udumalpet.%20Please%20share%20directions!" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-store-whatsapp">
+                          <svg class="wa-logo-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.98 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.48 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" fill="currentColor"/></svg>
+              <span>Directions on WhatsApp</span>
+            </a>
+
+            <a href="mailto:smartfit0626@gmail.com" class="btn btn-store-action">
+              <i data-lucide="mail"></i>
+              <span>smartfit0626@gmail.com</span>
+            </a>
+          </div>
+
+          <div class="store-socials">
+            <span class="social-label">Follow Official Updates:</span>
+            <div class="social-links">
+              <a href="https://instagram.com/smartfitudumalpet" target="_blank" rel="noopener noreferrer" class="social-pill" title="Instagram">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+                <span>@smartfitudumalpet</span>
+              </a>
+              <a href="https://facebook.com/smartfitudumalpet" target="_blank" rel="noopener noreferrer" class="social-pill" title="Facebook">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+                <span>Smart Fit Udumalpet</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed Container -->
+        <div class="store-map-card">
+          <div class="map-wrapper">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15682.90647192271!2d77.23467275!3d10.58473855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9d0739cbaea17%3A0x89d2d2a4129b0a0!2sGandhi%20Nagar%2C%20Udumalaipettai%2C%20Tamil%20Nadu%20642126!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Smart Fit Udumalpet Google Maps Location">
+            </iframe>
+            <div class="map-pin-badge">
+              <span class="live-dot"></span>
+              <span>Gandhi Nagar, Udumalpet</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Editorial Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <div class="brand-wordmark light">
+            <svg class="brand-logo-mark footer-logo-mark" viewBox="0 0 100 108" fill="none" aria-hidden="true">
+              <path class="logo-hanger-stroke" d="M50 20 C50 15.5 55.5 13 55.5 8.5 C55.5 5.2 53 3 50 3 C47.3 3 45.2 4.8 44.8 7.4" stroke-width="4" stroke-linecap="round" fill="none"/>
+              <path class="logo-hanger-fill" d="M50 18 L15 32.5 C13.5 33.1 13.8 34.5 15.5 34.3 C30 32.2 42 31.2 50 31.2 C58 31.2 70 32.2 84.5 34.3 C86.2 34.5 86.5 33.1 85 32.5 Z"/>
+              <path fill="#E3591D" fill-rule="evenodd" clip-rule="evenodd" d="M13 38 H87 V74 L50 104 L13 74 Z M20 44 V70.5 L46.5 92 V44 Z M53.5 44 V92 L80 70.5 V44 Z"/>
+              <path fill="#E3591D" d="M24 47 H42 V52.5 H30 V57 H42 V84 L24 70.5 V65.5 L36 74.5 V62 H24 Z"/>
+              <path fill="#E3591D" d="M58 47 H77 V52.5 H64 V58 H74.5 V63.5 H64 V79 L58 84 Z"/>
+            </svg>
+            <div class="brand-lockup">
+              <span class="brand-text">SMART FIT</span>
+              <span class="brand-subtext">IMPRESS OTHERS</span>
+            </div>
+          </div>
+          <p class="footer-bio">
+            <strong class="footer-lead-phrase">Mall Labels. Factory Prices.</strong> Udumalpet's premier branded surplus clothing boutique for Men, Women &amp; Kids — authentic factory overruns at 60%–75% off MRP.
+          </p>
+          <div class="footer-socials" aria-label="Smart Fit Social Links">
+            <a href="https://instagram.com/smartfitudumalpet" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Smart Fit on Instagram" title="@smartfitudumalpet on Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://facebook.com/smartfitudumalpet" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Smart Fit on Facebook" title="@smartfitudumalpet on Facebook">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://wa.me/919360660051?text=Hi%20Smart%20Fit%20Udumalpet,%20I'm%20visiting%20your%20website%20and%20would%20like%20to%20enquire!" target="_blank" rel="noopener noreferrer" class="footer-social-circle footer-social-wa" aria-label="Chat on WhatsApp" title="WhatsApp +91 9360660051">
+              <svg class="wa-logo-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.98 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.48 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Departments</h4>
+          <ul class="footer-links">
+            <li><a href="#departments">Women's Kurtis &amp; Sets</a></li>
+            <li><a href="#departments">Men's Formal &amp; Casual Shirts</a></li>
+            <li><a href="#departments">Branded Polo T-Shirts</a></li>
+            <li><a href="#departments">Kids Daily Wear</a></li>
+            <li><a href="#departments">Denims &amp; Active Wear</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home Lookbook</a></li>
+            <li><a href="#departments">Shop by Category</a></li>
+            <li><a href="#drops">New Weekly Drops</a></li>
+            <li><a href="#combo">Combo Deals &amp; Offers</a></li>
+            <li><a href="#why-us">Why Smart Fit</a></li>
+            <li><a href="#store-locator">Udumalpet Location</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Store Address</h4>
+          <div class="footer-address-block">
+            <p class="footer-address-lines">
+              No. 68, Kaliyaniammal Layout,<br>
+              Gandhi Nagar, Udumalpet – 642126<br>
+              Tamil Nadu, India
+            </p>
+            <p class="footer-contact-line">
+              <strong>WhatsApp:</strong> <a href="https://wa.me/919360660051" target="_blank" rel="noopener noreferrer">+91 9360660051</a>
+            </p>
+            <p class="footer-contact-line">
+              <strong>Email:</strong> <a href="mailto:smartfit0626@gmail.com">smartfit0626@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">© 2026 Smart Fit Boutique, Udumalpet. All rights reserved.</p>
+        <p class="footer-disclaimer-inline">
+          All brand names mentioned are properties of their respective trademark holders. Smart Fit sells authentic factory surplus clothing.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick-View Slide-Over Drawer -->
+  <div class="quick-view-drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="quick-view-drawer" id="quick-view-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" aria-hidden="true">
+    <div class="drawer-drag-handle"></div>
+    <div class="drawer-header">
+      <div class="drawer-header-left">
+        <span class="drawer-brand" id="drawer-brand">BRAND SURPLUS</span>
+        <h3 class="drawer-title" id="drawer-title">Product Details</h3>
+      </div>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close product quick view">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <div class="drawer-body">
+      <div class="drawer-media">
+        <img src="" alt="" id="drawer-image" class="drawer-img">
+        <span class="drawer-discount-badge" id="drawer-discount">-70% OFF</span>
+        <span class="drawer-stock-badge" id="drawer-stock">Factory Excess</span>
+      </div>
+
+      <div class="drawer-details">
+        <p class="drawer-subtitle" id="drawer-subtitle">Pure Cotton Weave</p>
+        
+        <div class="drawer-price-wrap">
+          <span class="drawer-surplus-price" id="drawer-price">₹799</span>
+          <del class="drawer-mrp" id="drawer-mrp">₹2,999</del>
+          <span class="drawer-savings" id="drawer-savings">You Save ₹2,200</span>
+        </div>
+
+        <div class="drawer-spec-table">
+          <div class="spec-row">
+            <span class="spec-label">Fabric / Quality:</span>
+            <span class="spec-value" id="drawer-fabric">100% Cotton</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Silhouette / Fit:</span>
+            <span class="spec-value" id="drawer-fit">Comfort Fit</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Condition:</span>
+            <span class="spec-value highlight-emerald">100% Brand Authentic Surplus</span>
+          </div>
+        </div>
+
+        <!-- Size Selection in Drawer -->
+        <div class="drawer-size-section">
+          <div class="size-header-row">
+            <span class="size-section-label">Select Your Size:</span>
+            <span class="size-hint">Tap to select before enquiry</span>
+          </div>
+          <div class="drawer-size-pills" id="drawer-sizes">
+            <!-- Injected via JavaScript -->
+          </div>
+        </div>
+
+        <p class="drawer-desc" id="drawer-desc">
+          Description goes here.
+        </p>
+
+        <!-- Guarantee Checklist -->
+        <div class="drawer-guarantees">
+          <div class="guarantee-item">
+            <i data-lucide="check-circle-2"></i>
+            <span>Real-time inventory verification on WhatsApp</span>
+          </div>
+          <div class="guarantee-item">
+            <i data-lucide="check-circle-2"></i>
+            <span>Doorstep courier to TN, KL, KA, AP, TS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <a href="#" id="drawer-wa-btn" class="btn btn-emerald btn-block" target="_blank" rel="noopener noreferrer">
+                    <svg class="wa-logo-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.98 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.48 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" fill="currentColor"/></svg>
+        <span>Enquire on WhatsApp (Size <strong id="drawer-selected-size-text">M</strong>)</span>
+      </a>
+
+      <a href="#" id="drawer-video-btn" class="btn btn-video-verify btn-block" target="_blank" rel="noopener noreferrer">
+        <i data-lucide="video"></i>
+        <span>Request Live Tag Video on WhatsApp</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
