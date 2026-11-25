@@ -1,45 +1,45 @@
 /* ==========================================================================
    SMART FIT UDUMALPET - EDITORIAL DESIGN SYSTEM
    Typography: Playfair Display + Syne + Plus Jakarta Sans
-   Palette: Warm Porcelain, Deep Midnight Navy, Royal Indigo, Flame Orange, Pine Emerald
+   Palette: Warm Porcelain, Jet Black, Flame Orange
    Mobile-First Refined Responsiveness: Zero Horizontal Overflow, No Touch Traps
    ========================================================================== */
 
 :root {
-  /* Color Palette - Aligned with Smart Fit Royal Navy & Flame Orange Logo */
-  --color-canvas: #F9F8F6;
-  --color-canvas-subtle: #F2F0EC;
+  /* Color Palette - Light, Airy Porcelain + Jet Black & Flame Orange */
+  --color-canvas: #FCFCFA;
+  --color-canvas-subtle: #F6F5F2;
   --color-surface: #FFFFFF;
-  --color-obsidian: #0E1330;
-  --color-obsidian-subtle: #161D42;
-  --color-obsidian-muted: #222B5C;
-  --color-text-main: #0E1330;
-  --color-text-secondary: #4B526E;
-  --color-text-muted: #7B829C;
-  --color-text-inverted: #F9F8F6;
+  --color-obsidian: #15181E;
+  --color-obsidian-subtle: #1D212A;
+  --color-obsidian-muted: #282D38;
+  --color-text-main: #15181E;
+  --color-text-secondary: #5A606D;
+  --color-text-muted: #828896;
+  --color-text-inverted: #FCFCFA;
 
-  /* Primary Logo Brand Accents */
-  --color-cobalt: #1E2B96;
-  --color-cobalt-hover: #152078;
-  --color-cobalt-light: rgba(30, 43, 150, 0.08);
+  /* Brand & Ink Accents */
+  --color-cobalt: #0B0D10;
+  --color-cobalt-hover: #20242C;
+  --color-cobalt-light: rgba(11, 13, 16, 0.06);
 
   --color-flame: #E3591D;
   --color-flame-hover: #C84711;
   --color-flame-bright: #FB923C;
   --color-flame-light: rgba(227, 89, 29, 0.10);
 
-  /* WhatsApp Action Accent (Deep Pine Emerald) */
-  --color-emerald: #0D6E66;
-  --color-emerald-hover: #095650;
-  --color-emerald-light: #ECFDF8;
-  --color-emerald-glow: rgba(13, 110, 102, 0.28);
+  /* Primary CTA Accent (Flame Orange replacing Sage Green) */
+  --color-emerald: #E3591D;
+  --color-emerald-hover: #C84711;
+  --color-emerald-light: rgba(227, 89, 29, 0.10);
+  --color-emerald-glow: rgba(227, 89, 29, 0.30);
 
-  /* Semantic Aliases Unified to Logo Palette */
+  /* Semantic Aliases */
   --color-crimson: #E3591D;
   --color-crimson-dark: #C84711;
   --color-amber: #E3591D;
-  --color-border: #E4E2DC;
-  --color-border-dark: #252E60;
+  --color-border: #ECEBE7;
+  --color-border-dark: #2B303B;
 
   /* Typography */
   --font-script: 'Playfair Display', Georgia, serif;
@@ -47,11 +47,11 @@
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
   /* Elevation & Shadows */
-  --shadow-sm: 0 1px 3px rgba(11, 13, 16, 0.05);
-  --shadow-md: 0 4px 16px -2px rgba(11, 13, 16, 0.08);
-  --shadow-lg: 0 12px 32px -4px rgba(11, 13, 16, 0.12);
-  --shadow-xl: 0 24px 50px -8px rgba(11, 13, 16, 0.22);
-  --shadow-emerald: 0 8px 24px -4px rgba(5, 150, 105, 0.35);
+  --shadow-sm: 0 1px 3px rgba(15, 18, 25, 0.04);
+  --shadow-md: 0 4px 16px -2px rgba(15, 18, 25, 0.06);
+  --shadow-lg: 0 12px 32px -4px rgba(15, 18, 25, 0.09);
+  --shadow-xl: 0 22px 44px -8px rgba(15, 18, 25, 0.14);
+  --shadow-emerald: 0 8px 24px -4px rgba(227, 89, 29, 0.35);
 
   /* Layout Constants */
   --container-max: 1340px;
@@ -122,7 +122,7 @@ a {
    TOP PROMOTIONAL ANNOUNCEMENT BAR
    ========================================================================== */
 .promo-top-bar {
-  background: linear-gradient(90deg, #131B62 0%, #1E2B96 50%, #131B62 100%);
+  background: #0B0D10;
   color: #FFFFFF;
   font-size: 0.74rem;
   font-weight: 700;
@@ -247,12 +247,12 @@ a {
 }
 
 .logo-hanger-stroke {
-  stroke: #1E2B96;
+  stroke: #0B0D10;
   transition: stroke 0.3s ease;
 }
 
 .logo-hanger-fill {
-  fill: #1E2B96;
+  fill: #0B0D10;
   transition: fill 0.3s ease;
 }
 
@@ -267,7 +267,7 @@ a {
   font-weight: 900;
   font-size: 1.32rem;
   letter-spacing: -0.02em;
-  color: #1E2B96;
+  color: #0B0D10;
   text-transform: uppercase;
   transition: color 0.3s ease;
 }
@@ -297,11 +297,11 @@ a {
 }
 
 .brand-wordmark.light .logo-hanger-stroke {
-  stroke: #93C5FD;
+  stroke: #FFFFFF;
 }
 
 .brand-wordmark.light .logo-hanger-fill {
-  fill: #93C5FD;
+  fill: #FFFFFF;
 }
 
 .brand-wordmark.light .brand-badge {
@@ -447,7 +447,7 @@ a {
 }
 
 .btn-whatsapp-header {
-  background-color: #0D6E66; /* Deep pine emerald matching reference */
+  background-color: #0B0D10; /* Sleek Jet Black CTA matching Black + Flame Orange logo */
   color: #FFFFFF;
   padding: 10px 22px;
   border-radius: 9999px;
@@ -458,15 +458,15 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 4px 14px rgba(13, 110, 102, 0.32);
+  box-shadow: 0 4px 14px rgba(11, 13, 16, 0.22);
   transition: all 0.2s ease;
   white-space: nowrap;
 }
 
 .btn-whatsapp-header:hover {
-  background-color: #0A5A53;
+  background-color: var(--color-flame);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(13, 110, 102, 0.45);
+  box-shadow: 0 6px 20px rgba(227, 89, 29, 0.35);
   color: #FFFFFF;
 }
 
@@ -730,9 +730,9 @@ a {
   bottom: 0;
   background: linear-gradient(
     90deg, 
-    rgba(11, 13, 16, 0.88) 0%, 
-    rgba(11, 13, 16, 0.65) 45%, 
-    rgba(11, 13, 16, 0.25) 100%
+    rgba(16, 19, 25, 0.68) 0%, 
+    rgba(16, 19, 25, 0.40) 45%, 
+    rgba(16, 19, 25, 0.10) 100%
   );
 }
 
@@ -797,32 +797,27 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  background: rgba(14, 19, 48, 0.78);
-  backdrop-filter: blur(10px);
-  padding: 8px 18px;
-  border-radius: var(--radius-sm);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  margin-bottom: 32px;
+  padding: 2px 0;
+  margin-bottom: 28px;
 }
 
 .hero-pricing-pill .price-val {
-  color: var(--color-flame-bright);
+  color: #FFFFFF;
   font-weight: 800;
-  font-size: 1.05rem;
+  font-size: 1.08rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-pricing-pill del {
-  color: #94A3B8;
-  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
 }
 
 .hero-pricing-pill .price-save {
-  background: var(--color-flame);
-  color: #FFFFFF;
-  font-size: 0.7rem;
+  color: var(--color-flame-bright);
+  font-size: 0.85rem;
   font-weight: 800;
-  padding: 2px 8px;
-  border-radius: var(--radius-full);
+  letter-spacing: 0.02em;
 }
 
 .hero-slide-ctas {
@@ -838,7 +833,7 @@ a {
   padding: 14px 28px;
   font-size: 0.94rem;
   border-radius: var(--radius-full);
-  box-shadow: 0 6px 20px rgba(5, 150, 105, 0.35);
+  box-shadow: 0 6px 20px rgba(227, 89, 29, 0.35);
   font-weight: 700;
   display: inline-flex;
   align-items: center;
@@ -995,7 +990,7 @@ a {
   left: 0;
   right: 0;
   padding: 24px 20px;
-  background: linear-gradient(180deg, transparent 0%, rgba(11, 13, 16, 0.92) 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(16, 19, 25, 0.78) 100%);
   color: #FFFFFF;
 }
 
@@ -1047,18 +1042,18 @@ a {
    INFINITE KINETIC BRAND MARQUEE
    ========================================================================== */
 .kinetic-marquee {
-  background: var(--color-obsidian);
+  background: #1C2029;
   color: #FFFFFF;
   padding: 20px 0;
   overflow: hidden;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: kineticMarquee 26s linear infinite;
+  animation: kineticMarquee 52s linear infinite;
 }
 
 .kinetic-marquee:hover .marquee-track {
@@ -1275,7 +1270,7 @@ section[id] {
   color: #FFFFFF;
   padding: 4px 8px;
   border-radius: var(--radius-sm);
-  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.35);
+  box-shadow: 0 2px 8px rgba(227, 89, 29, 0.32);
 }
 
 /* Card Wishlist Heart Button */
@@ -1464,7 +1459,7 @@ section[id] {
 
 .btn-card-wa {
   width: 100%;
-  background: var(--color-emerald);
+  background: var(--color-obsidian);
   color: #FFFFFF;
   font-size: 0.82rem;
   font-weight: 700;
@@ -1474,14 +1469,14 @@ section[id] {
   align-items: center;
   justify-content: center;
   gap: 7px;
-  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.2);
+  box-shadow: 0 2px 8px rgba(11, 13, 16, 0.14);
   transition: all var(--transition-fast);
 }
 
 .btn-card-wa:hover {
-  background: var(--color-emerald-hover);
+  background: var(--color-flame);
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+  box-shadow: 0 4px 14px rgba(227, 89, 29, 0.32);
 }
 
 /* Helper Strip Below Highlights */
@@ -1568,14 +1563,14 @@ section[id] {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.55;
+  opacity: 0.78;
   transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s;
   z-index: 1;
 }
 
 .bento-card:hover .bento-bg-img {
   transform: scale(1.05);
-  opacity: 0.65;
+  opacity: 0.86;
 }
 
 .bento-overlay {
@@ -1584,7 +1579,7 @@ section[id] {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(11, 13, 16, 0.1) 0%, rgba(11, 13, 16, 0.88) 75%, rgba(11, 13, 16, 0.98) 100%);
+  background: linear-gradient(180deg, rgba(16, 19, 25, 0.02) 0%, rgba(16, 19, 25, 0.62) 72%, rgba(16, 19, 25, 0.86) 100%);
   z-index: 2;
 }
 
@@ -1825,7 +1820,7 @@ section[id] {
    COMBO OFFER BANNER (SMART3X)
    ========================================================================== */
 .editorial-banner {
-  background: var(--color-obsidian);
+  background: linear-gradient(135deg, #1B1F28 0%, #252A36 100%);
   color: #FFFFFF;
   border-radius: var(--radius-xl);
   overflow: hidden;
@@ -1978,7 +1973,7 @@ section[id] {
   padding: 14px 28px;
   font-size: 0.94rem;
   border-radius: var(--radius-full);
-  box-shadow: 0 4px 20px rgba(5, 150, 105, 0.4);
+  box-shadow: 0 4px 20px rgba(227, 89, 29, 0.4);
 }
 
 .btn-combo-wa:hover {
@@ -2162,13 +2157,13 @@ section[id] {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.82;
+  opacity: 0.92;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s;
 }
 
 .reel-card:hover .reel-img {
   transform: scale(1.08);
-  opacity: 0.95;
+  opacity: 1;
 }
 
 .reel-overlay {
@@ -2177,7 +2172,7 @@ section[id] {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.85) 100%);
+  background: linear-gradient(180deg, rgba(16, 19, 25, 0.04) 0%, rgba(16, 19, 25, 0.72) 100%);
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -2327,7 +2322,7 @@ section[id] {
 }
 
 .btn-store-whatsapp {
-  background: var(--color-emerald);
+  background: var(--color-obsidian);
   color: #FFFFFF;
   font-size: 0.9rem;
   font-weight: 700;
@@ -2337,11 +2332,13 @@ section[id] {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  box-shadow: 0 2px 10px rgba(5, 150, 105, 0.25);
+  box-shadow: 0 2px 10px rgba(11, 13, 16, 0.18);
+  transition: all var(--transition-fast);
 }
 
 .btn-store-whatsapp:hover {
-  background: var(--color-emerald-hover);
+  background: var(--color-flame);
+  box-shadow: 0 4px 14px rgba(227, 89, 29, 0.32);
 }
 
 .btn-store-action {
@@ -2442,10 +2439,10 @@ section[id] {
    EDITORIAL FOOTER
    ========================================================================== */
 .site-footer {
-  background: linear-gradient(180deg, #0E1330 0%, #090D24 100%);
+  background: linear-gradient(180deg, #171B24 0%, #11141B 100%);
   color: #FFFFFF;
   padding: 68px 24px 32px;
-  border-top: 2px solid rgba(227, 89, 29, 0.4);
+  border-top: 2px solid rgba(227, 89, 29, 0.45);
   position: relative;
   overflow: hidden;
 }
@@ -2457,7 +2454,7 @@ section[id] {
   left: -80px;
   width: 380px;
   height: 380px;
-  background: radial-gradient(circle, rgba(30, 43, 150, 0.28) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(227, 89, 29, 0.12) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -2526,14 +2523,14 @@ section[id] {
 }
 
 .footer-social-wa {
-  background: rgba(13, 110, 102, 0.25);
-  border-color: rgba(52, 211, 153, 0.35);
-  color: #34D399;
+  background: rgba(227, 89, 29, 0.16);
+  border-color: rgba(251, 146, 60, 0.4);
+  color: var(--color-flame-bright);
 }
 
 .footer-social-wa:hover {
-  background: var(--color-emerald);
-  border-color: var(--color-emerald);
+  background: var(--color-flame);
+  border-color: var(--color-flame);
   color: #FFFFFF;
 }
 
@@ -2580,7 +2577,7 @@ section[id] {
 }
 
 .footer-contact-line a {
-  color: #93C5FD;
+  color: #F8FAFC;
   transition: color var(--transition-fast);
 }
 
@@ -3375,7 +3372,7 @@ section[id] {
     right: 0;
     z-index: 1000;
     width: 100%;
-    background: linear-gradient(180deg, rgba(11, 13, 16, 0.78) 0%, rgba(11, 13, 16, 0.3) 70%, transparent 100%);
+    background: linear-gradient(180deg, rgba(16, 19, 25, 0.56) 0%, rgba(16, 19, 25, 0.18) 70%, transparent 100%);
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
   }
@@ -3442,15 +3439,15 @@ section[id] {
   }
 
   .site-header.scrolled .logo-hanger-stroke {
-    stroke: #1E2B96;
+    stroke: #0B0D10;
   }
 
   .site-header.scrolled .logo-hanger-fill {
-    fill: #1E2B96;
+    fill: #0B0D10;
   }
 
   .site-header.scrolled .brand-text {
-    color: #1E2B96;
+    color: #0B0D10;
   }
 
   .site-header.scrolled .brand-subtext {
@@ -3500,7 +3497,7 @@ section[id] {
     height: 36px;
     padding: 0;
     border-radius: 50%;
-    background: #0D6E66;
+    background: var(--color-flame);
     color: #FFFFFF;
     display: flex;
     align-items: center;
@@ -3640,9 +3637,9 @@ section[id] {
   .slide-gradient-overlay {
     background: linear-gradient(
       180deg, 
-      rgba(14, 19, 48, 0.78) 0%, 
-      rgba(14, 19, 48, 0.36) 45%, 
-      rgba(14, 19, 48, 0.9) 100%
+      rgba(16, 19, 25, 0.58) 0%, 
+      rgba(16, 19, 25, 0.22) 45%, 
+      rgba(16, 19, 25, 0.72) 100%
     );
   }
 
@@ -3686,26 +3683,19 @@ section[id] {
   .hero-pricing-pill {
     display: inline-flex;
     align-items: center;
-    padding: 5px 12px;
-    font-size: 0.78rem;
+    padding: 0;
+    font-size: 0.82rem;
     gap: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     flex-wrap: wrap;
     justify-content: center;
-    background: rgba(11, 13, 16, 0.65);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: var(--radius-full);
     color: #FFFFFF;
   }
 
   .hero-pricing-pill .price-save {
-    background: var(--color-flame);
-    color: #FFFFFF;
-    padding: 2px 6px;
-    border-radius: var(--radius-sm);
+    color: var(--color-flame-bright);
     font-weight: 800;
-    font-size: 0.7rem;
+    font-size: 0.78rem;
   }
 
   .hero-slide-ctas {
@@ -3723,7 +3713,7 @@ section[id] {
     font-size: 0.88rem;
     border-radius: var(--radius-full);
     background: var(--color-emerald);
-    box-shadow: 0 4px 16px rgba(5, 150, 105, 0.4);
+    box-shadow: 0 4px 16px rgba(227, 89, 29, 0.38);
   }
 
   .btn-hero-browse {
@@ -4052,7 +4042,7 @@ section[id] {
     width: 100%;
     justify-content: center;
     border-radius: var(--radius-sm);
-    background: var(--color-emerald);
+    background: var(--color-obsidian);
     color: #FFFFFF;
     white-space: nowrap;
     overflow: hidden;
@@ -4329,7 +4319,7 @@ section[id] {
   .floating-wa-btn {
     width: 48px;
     height: 48px;
-    box-shadow: 0 4px 16px rgba(5, 150, 105, 0.4);
+    box-shadow: 0 4px 16px rgba(227, 89, 29, 0.38);
   }
 
   .wa-main-icon {

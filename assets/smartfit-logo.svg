@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 108" fill="none" aria-label="Smart Fit Logo">
   <!-- Hanger -->
-  <path d="M50 20 C50 15.5 55.5 13 55.5 8.5 C55.5 5.2 53 3 50 3 C47.3 3 45.2 4.8 44.8 7.4" stroke="#1E2B96" stroke-width="3.6" stroke-linecap="round" fill="none"/>
-  <path d="M50 18 L15 32.5 C13.5 33.1 13.8 34.5 15.5 34.3 C30 32.2 42 31.2 50 31.2 C58 31.2 70 32.2 84.5 34.3 C86.2 34.5 86.5 33.1 85 32.5 Z" fill="#1E2B96"/>
+  <path d="M50 20 C50 15.5 55.5 13 55.5 8.5 C55.5 5.2 53 3 50 3 C47.3 3 45.2 4.8 44.8 7.4" stroke="#0B0D10" stroke-width="3.6" stroke-linecap="round" fill="none"/>
+  <path d="M50 18 L15 32.5 C13.5 33.1 13.8 34.5 15.5 34.3 C30 32.2 42 31.2 50 31.2 C58 31.2 70 32.2 84.5 34.3 C86.2 34.5 86.5 33.1 85 32.5 Z" fill="#0B0D10"/>
   <!-- Orange SF Shield -->
   <path fill="#E3591D" fill-rule="evenodd" clip-rule="evenodd" d="
     M13 38 H87 V74 L50 104 L13 74 Z

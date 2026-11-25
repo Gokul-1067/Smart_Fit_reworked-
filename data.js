@@ -20,18 +20,6 @@ const SMART_FIT_DATA = {
 
   heroSlides: [
     {
-      id: "slide-avaasa",
-      badge: "CARTON SURPLUS LOT #28",
-      scriptTitle: "Unbox the Surplus",
-      subTitle: "AVAASA 2-PC & 3-PC FESTIVE ENSEMBLES",
-      discountBadge: "FLAT 70% OFF",
-      priceHighlight: "Special Surplus ₹799 <del>₹2,999</del>",
-      image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1920&q=85",
-      filter: "kurtis",
-      btnText: "Shop Avaasa on WhatsApp",
-      waMessage: "Hi Smart Fit Udumalpet! I saw the Avaasa 2-Pc & 3-Pc Kurti sets on your hero banner (Flat 70% OFF). Please share available designs and sizes!"
-    },
-    {
       id: "slide-shirts",
       badge: "EXPORT FACTORY EXCESS",
       scriptTitle: "Mall Labels. Factory Prices.",
@@ -42,6 +30,18 @@ const SMART_FIT_DATA = {
       filter: "shirts",
       btnText: "Order Shirts on WhatsApp",
       waMessage: "Hi Smart Fit Udumalpet! I want to order Louis Philippe and US Polo shirts from your surplus collection. What sizes are currently in stock?"
+    },
+    {
+      id: "slide-avaasa",
+      badge: "CARTON SURPLUS LOT #28",
+      scriptTitle: "Unbox the Surplus",
+      subTitle: "AVAASA 2-PC & 3-PC FESTIVE ENSEMBLES",
+      discountBadge: "FLAT 70% OFF",
+      priceHighlight: "Special Surplus ₹799 <del>₹2,999</del>",
+      image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1920&q=85",
+      filter: "kurtis",
+      btnText: "Shop Avaasa on WhatsApp",
+      waMessage: "Hi Smart Fit Udumalpet! I saw the Avaasa 2-Pc & 3-Pc Kurti sets on your hero banner (Flat 70% OFF). Please share available designs and sizes!"
     },
     {
       id: "slide-tees",

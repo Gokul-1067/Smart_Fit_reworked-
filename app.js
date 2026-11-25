@@ -234,7 +234,6 @@
         <button class="story-item" data-filter="${story.filter}" aria-label="View ${story.title}">
           <div class="story-ring">
             <img src="${story.image}" alt="${story.title}" class="story-avatar" loading="lazy">
-            <span class="story-badge">${story.badge}</span>
           </div>
           <span class="story-title">${story.title}</span>
         </button>
